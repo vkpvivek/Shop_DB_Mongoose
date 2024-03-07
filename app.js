@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const errorController = require('./controllers/error');
-const User = require('./models/user');
+// const User = require('./models/user');
 
 const app = express();
 
@@ -34,7 +34,7 @@ app.use(errorController.get404);
 
 mongoose
   .connect(
-    'mongodb+srv://vkpvivek:zxcvbnm123@cluster0.9zeb8i5.mongodb.net/test?retryWrites=true',
+    'mongodb+srv://vkpvivek:zxcvbnm123@cluster0.9zeb8i5.mongodb.net/ShopDB?retryWrites=true',
     // 'mongodb+srv://vkpvivek:zxcvbnm123@cluster0.9zeb8i5.mongodb.net/',
     {useNewUrlParser: true, useUnifiedTopology: true}
   )
